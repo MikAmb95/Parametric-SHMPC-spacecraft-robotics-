@@ -3,7 +3,7 @@
 %1) a feedback linearization is used to linearize the system
 %2) the paramenters to be optimised are the control gain values (i.e Kp/Kd)
 
-%Michele Ambrosino, Ilya Kolmanovsky last rev 06/05/2024
+%Michele Ambrosino, Ilya Kolmanovsky last rev 06/06/2024
 
 
 clearvars
