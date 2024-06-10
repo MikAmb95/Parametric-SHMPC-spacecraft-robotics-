@@ -151,7 +151,7 @@ function plotResults(t, X,xf,U,J,Kgain)
     subplot(2,1, 1);
     plot(t, X(1,:), t, X(2,:),t, X(3,:),t, X(4,:),t, X(5,:),t, X(6,:));
     hold on
-    plot(t,xf*ones(1,size(t,2)),'--');
+    plot(t,xf(1:6,1)*ones(1,size(t,2)),'--');
     legend('x', 'y','\psi','q_1','q_2','q_3','Location','best');
     xlabel('time[s]')
     title('Position');
@@ -176,8 +176,7 @@ function plotResults(t, X,xf,U,J,Kgain)
     subplot(2,1, 1); plot(t, Kgain(:,1:6), '--'); title('Kp');
     subplot(2,1, 2); plot(t, Kgain(:,7:end), '--'); title('Kd');
     
-    print_system_config
+    %print_system_config
     
     
 end
-
